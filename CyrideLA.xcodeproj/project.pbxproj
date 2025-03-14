@@ -21,6 +21,8 @@
 		1628FA852D81FF18000C3038 /* cyrideInfoExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1628FA732D81FF16000C3038 /* cyrideInfoExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1628FA8B2D81FF50000C3038 /* CyrideAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1628FA8A2D81FF50000C3038 /* CyrideAttributes.swift */; };
 		164C43C32D84C5C4004276C3 /* RoutesStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164C43C22D84C5C4004276C3 /* RoutesStruct.swift */; };
+		164C43C52D84C8B9004276C3 /* VehiclesStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164C43C42D84C8B9004276C3 /* VehiclesStruct.swift */; };
+		164C43C72D84CD66004276C3 /* StopsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164C43C62D84CD66004276C3 /* StopsStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		1628FA822D81FF18000C3038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1628FA8A2D81FF50000C3038 /* CyrideAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyrideAttributes.swift; sourceTree = "<group>"; };
 		164C43C22D84C5C4004276C3 /* RoutesStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesStruct.swift; sourceTree = "<group>"; };
+		164C43C42D84C8B9004276C3 /* VehiclesStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesStruct.swift; sourceTree = "<group>"; };
+		164C43C62D84CD66004276C3 /* StopsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				1628FA642D81FC0A000C3038 /* Preview Content */,
 				1628FA8A2D81FF50000C3038 /* CyrideAttributes.swift */,
 				164C43C22D84C5C4004276C3 /* RoutesStruct.swift */,
+				164C43C42D84C8B9004276C3 /* VehiclesStruct.swift */,
+				164C43C62D84CD66004276C3 /* StopsStruct.swift */,
 			);
 			path = CyrideLA;
 			sourceTree = "<group>";
@@ -254,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164C43C52D84C8B9004276C3 /* VehiclesStruct.swift in Sources */,
 				164C43C32D84C5C4004276C3 /* RoutesStruct.swift in Sources */,
 				1628FA612D81FC08000C3038 /* ContentView.swift in Sources */,
 				1628FA5F2D81FC08000C3038 /* CyrideLAApp.swift in Sources */,
+				164C43C72D84CD66004276C3 /* StopsStruct.swift in Sources */,
 				1628FA8B2D81FF50000C3038 /* CyrideAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
