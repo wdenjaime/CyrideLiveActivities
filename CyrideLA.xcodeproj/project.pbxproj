@@ -11,7 +11,41 @@
 		1628FA612D81FC08000C3038 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1628FA602D81FC08000C3038 /* ContentView.swift */; };
 		1628FA632D81FC0A000C3038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1628FA622D81FC0A000C3038 /* Assets.xcassets */; };
 		1628FA662D81FC0A000C3038 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1628FA652D81FC0A000C3038 /* Preview Assets.xcassets */; };
+		1628FA6E2D81FED2000C3038 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1628FA6D2D81FED2000C3038 /* RealmSwift */; };
+		1628FA762D81FF16000C3038 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1628FA752D81FF16000C3038 /* WidgetKit.framework */; };
+		1628FA782D81FF16000C3038 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1628FA772D81FF16000C3038 /* SwiftUI.framework */; };
+		1628FA7B2D81FF16000C3038 /* cyrideInfoBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1628FA7A2D81FF16000C3038 /* cyrideInfoBundle.swift */; };
+		1628FA7D2D81FF16000C3038 /* cyrideInfoLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1628FA7C2D81FF16000C3038 /* cyrideInfoLiveActivity.swift */; };
+		1628FA7F2D81FF16000C3038 /* cyrideInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1628FA7E2D81FF16000C3038 /* cyrideInfo.swift */; };
+		1628FA812D81FF18000C3038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1628FA802D81FF18000C3038 /* Assets.xcassets */; };
+		1628FA852D81FF18000C3038 /* cyrideInfoExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1628FA732D81FF16000C3038 /* cyrideInfoExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1628FA8B2D81FF50000C3038 /* CyrideAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1628FA8A2D81FF50000C3038 /* CyrideAttributes.swift */; };
+		164C43C32D84C5C4004276C3 /* RoutesStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164C43C22D84C5C4004276C3 /* RoutesStruct.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1628FA832D81FF18000C3038 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1628FA532D81FC08000C3038 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1628FA722D81FF16000C3038;
+			remoteInfo = cyrideInfoExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1628FA892D81FF18000C3038 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1628FA852D81FF18000C3038 /* cyrideInfoExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1628FA5B2D81FC08000C3038 /* CyrideLA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CyrideLA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +53,16 @@
 		1628FA602D81FC08000C3038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1628FA622D81FC0A000C3038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1628FA652D81FC0A000C3038 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1628FA732D81FF16000C3038 /* cyrideInfoExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = cyrideInfoExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1628FA752D81FF16000C3038 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1628FA772D81FF16000C3038 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1628FA7A2D81FF16000C3038 /* cyrideInfoBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cyrideInfoBundle.swift; sourceTree = "<group>"; };
+		1628FA7C2D81FF16000C3038 /* cyrideInfoLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cyrideInfoLiveActivity.swift; sourceTree = "<group>"; };
+		1628FA7E2D81FF16000C3038 /* cyrideInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cyrideInfo.swift; sourceTree = "<group>"; };
+		1628FA802D81FF18000C3038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1628FA822D81FF18000C3038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1628FA8A2D81FF50000C3038 /* CyrideAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyrideAttributes.swift; sourceTree = "<group>"; };
+		164C43C22D84C5C4004276C3 /* RoutesStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +70,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1628FA6E2D81FED2000C3038 /* RealmSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1628FA702D81FF16000C3038 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1628FA782D81FF16000C3038 /* SwiftUI.framework in Frameworks */,
+				1628FA762D81FF16000C3038 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				1628FA5D2D81FC08000C3038 /* CyrideLA */,
+				1628FA792D81FF16000C3038 /* cyrideInfo */,
+				1628FA742D81FF16000C3038 /* Frameworks */,
 				1628FA5C2D81FC08000C3038 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				1628FA5B2D81FC08000C3038 /* CyrideLA.app */,
+				1628FA732D81FF16000C3038 /* cyrideInfoExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +112,8 @@
 				1628FA602D81FC08000C3038 /* ContentView.swift */,
 				1628FA622D81FC0A000C3038 /* Assets.xcassets */,
 				1628FA642D81FC0A000C3038 /* Preview Content */,
+				1628FA8A2D81FF50000C3038 /* CyrideAttributes.swift */,
+				164C43C22D84C5C4004276C3 /* RoutesStruct.swift */,
 			);
 			path = CyrideLA;
 			sourceTree = "<group>";
@@ -67,6 +126,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1628FA742D81FF16000C3038 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1628FA752D81FF16000C3038 /* WidgetKit.framework */,
+				1628FA772D81FF16000C3038 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1628FA792D81FF16000C3038 /* cyrideInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1628FA7A2D81FF16000C3038 /* cyrideInfoBundle.swift */,
+				1628FA7C2D81FF16000C3038 /* cyrideInfoLiveActivity.swift */,
+				1628FA7E2D81FF16000C3038 /* cyrideInfo.swift */,
+				1628FA802D81FF18000C3038 /* Assets.xcassets */,
+				1628FA822D81FF18000C3038 /* Info.plist */,
+			);
+			path = cyrideInfo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +157,37 @@
 				1628FA572D81FC08000C3038 /* Sources */,
 				1628FA582D81FC08000C3038 /* Frameworks */,
 				1628FA592D81FC08000C3038 /* Resources */,
+				1628FA892D81FF18000C3038 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1628FA842D81FF18000C3038 /* PBXTargetDependency */,
+			);
+			name = CyrideLA;
+			packageProductDependencies = (
+				1628FA6D2D81FED2000C3038 /* RealmSwift */,
+			);
+			productName = CyrideLA;
+			productReference = 1628FA5B2D81FC08000C3038 /* CyrideLA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1628FA722D81FF16000C3038 /* cyrideInfoExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1628FA862D81FF18000C3038 /* Build configuration list for PBXNativeTarget "cyrideInfoExtension" */;
+			buildPhases = (
+				1628FA6F2D81FF16000C3038 /* Sources */,
+				1628FA702D81FF16000C3038 /* Frameworks */,
+				1628FA712D81FF16000C3038 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CyrideLA;
-			productName = CyrideLA;
-			productReference = 1628FA5B2D81FC08000C3038 /* CyrideLA.app */;
-			productType = "com.apple.product-type.application";
+			name = cyrideInfoExtension;
+			productName = cyrideInfoExtension;
+			productReference = 1628FA732D81FF16000C3038 /* cyrideInfoExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +202,9 @@
 					1628FA5A2D81FC08000C3038 = {
 						CreatedOnToolsVersion = 15.4;
 					};
+					1628FA722D81FF16000C3038 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 				};
 			};
 			buildConfigurationList = 1628FA562D81FC08000C3038 /* Build configuration list for PBXProject "CyrideLA" */;
@@ -111,11 +216,15 @@
 				Base,
 			);
 			mainGroup = 1628FA522D81FC08000C3038;
+			packageReferences = (
+				1628FA6C2D81FED2000C3038 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 1628FA5C2D81FC08000C3038 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1628FA5A2D81FC08000C3038 /* CyrideLA */,
+				1628FA722D81FF16000C3038 /* cyrideInfoExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +239,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1628FA712D81FF16000C3038 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1628FA812D81FF18000C3038 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +254,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164C43C32D84C5C4004276C3 /* RoutesStruct.swift in Sources */,
 				1628FA612D81FC08000C3038 /* ContentView.swift in Sources */,
 				1628FA5F2D81FC08000C3038 /* CyrideLAApp.swift in Sources */,
+				1628FA8B2D81FF50000C3038 /* CyrideAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1628FA6F2D81FF16000C3038 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1628FA7D2D81FF16000C3038 /* cyrideInfoLiveActivity.swift in Sources */,
+				1628FA7F2D81FF16000C3038 /* cyrideInfo.swift in Sources */,
+				1628FA7B2D81FF16000C3038 /* cyrideInfoBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1628FA842D81FF18000C3038 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1628FA722D81FF16000C3038 /* cyrideInfoExtension */;
+			targetProxy = 1628FA832D81FF18000C3038 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1628FA672D81FC0A000C3038 /* Debug */ = {
@@ -267,6 +404,7 @@
 		1628FA6A2D81FC0A000C3038 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +434,7 @@
 		1628FA6B2D81FC0A000C3038 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +455,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wdenjaime.CyrideLA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1628FA872D81FF18000C3038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KAS388LMH3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cyrideInfo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = cyrideInfo;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdenjaime.CyrideLA.cyrideInfo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1628FA882D81FF18000C3038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KAS388LMH3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cyrideInfo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = cyrideInfo;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdenjaime.CyrideLA.cyrideInfo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -343,7 +536,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1628FA862D81FF18000C3038 /* Build configuration list for PBXNativeTarget "cyrideInfoExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1628FA872D81FF18000C3038 /* Debug */,
+				1628FA882D81FF18000C3038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1628FA6C2D81FED2000C3038 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 10.54.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1628FA6D2D81FED2000C3038 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1628FA6C2D81FED2000C3038 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1628FA532D81FC08000C3038 /* Project object */;
 }

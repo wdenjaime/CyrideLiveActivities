@@ -6,19 +6,26 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack (spacing: 20) {
+            Text("Cyride")
+                .fontWeight(.bold)
+            
+            Button("Start Activity") {
+                //startActivity()
+            }
+            
+            Button("Stop Activity") {
+               //stopActivity()
+            }
         }
         .padding()
     }
+    
+    
+    
 }
 
-#Preview {
-    ContentView()
-}
