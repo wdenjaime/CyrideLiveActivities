@@ -23,6 +23,12 @@
 		164C43C32D84C5C4004276C3 /* RoutesStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164C43C22D84C5C4004276C3 /* RoutesStruct.swift */; };
 		164C43C52D84C8B9004276C3 /* VehiclesStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164C43C42D84C8B9004276C3 /* VehiclesStruct.swift */; };
 		164C43C72D84CD66004276C3 /* StopsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164C43C62D84CD66004276C3 /* StopsStruct.swift */; };
+		164C43CC2D8A22EB004276C3 /* CyrideAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1628FA8A2D81FF50000C3038 /* CyrideAttributes.swift */; };
+		164C43D02D8A27A4004276C3 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 1628FA6D2D81FED2000C3038 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		164C43D42D8A2E1D004276C3 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 164C43D32D8A2E1D004276C3 /* FirebaseAnalytics */; };
+		164C43D62D8A2E1D004276C3 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 164C43D52D8A2E1D004276C3 /* FirebaseMessaging */; };
+		164C43D82D8A33F8004276C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 164C43D72D8A33F8004276C3 /* GoogleService-Info.plist */; };
+		164C43D92D8A33F8004276C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 164C43D72D8A33F8004276C3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,17 @@
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		164C43D12D8A27A5004276C3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				164C43D02D8A27A4004276C3 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +84,7 @@
 		164C43C22D84C5C4004276C3 /* RoutesStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesStruct.swift; sourceTree = "<group>"; };
 		164C43C42D84C8B9004276C3 /* VehiclesStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesStruct.swift; sourceTree = "<group>"; };
 		164C43C62D84CD66004276C3 /* StopsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsStruct.swift; sourceTree = "<group>"; };
+		164C43D72D8A33F8004276C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164C43D62D8A2E1D004276C3 /* FirebaseMessaging in Frameworks */,
+				164C43D42D8A2E1D004276C3 /* FirebaseAnalytics in Frameworks */,
 				1628FA6E2D81FED2000C3038 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +134,7 @@
 			children = (
 				1628FA5E2D81FC08000C3038 /* CyrideLAApp.swift */,
 				1628FA602D81FC08000C3038 /* ContentView.swift */,
+				164C43D72D8A33F8004276C3 /* GoogleService-Info.plist */,
 				1628FA622D81FC0A000C3038 /* Assets.xcassets */,
 				1628FA642D81FC0A000C3038 /* Preview Content */,
 				1628FA8A2D81FF50000C3038 /* CyrideAttributes.swift */,
@@ -164,6 +185,7 @@
 				1628FA582D81FC08000C3038 /* Frameworks */,
 				1628FA592D81FC08000C3038 /* Resources */,
 				1628FA892D81FF18000C3038 /* Embed Foundation Extensions */,
+				164C43D12D8A27A5004276C3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,6 +195,8 @@
 			name = CyrideLA;
 			packageProductDependencies = (
 				1628FA6D2D81FED2000C3038 /* RealmSwift */,
+				164C43D32D8A2E1D004276C3 /* FirebaseAnalytics */,
+				164C43D52D8A2E1D004276C3 /* FirebaseMessaging */,
 			);
 			productName = CyrideLA;
 			productReference = 1628FA5B2D81FC08000C3038 /* CyrideLA.app */;
@@ -224,6 +248,7 @@
 			mainGroup = 1628FA522D81FC08000C3038;
 			packageReferences = (
 				1628FA6C2D81FED2000C3038 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				164C43D22D8A2E1D004276C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 1628FA5C2D81FC08000C3038 /* Products */;
 			projectDirPath = "";
@@ -242,6 +267,7 @@
 			files = (
 				1628FA662D81FC0A000C3038 /* Preview Assets.xcassets in Resources */,
 				1628FA632D81FC0A000C3038 /* Assets.xcassets in Resources */,
+				164C43D82D8A33F8004276C3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1628FA812D81FF18000C3038 /* Assets.xcassets in Resources */,
+				164C43D92D8A33F8004276C3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164C43CC2D8A22EB004276C3 /* CyrideAttributes.swift in Sources */,
 				1628FA7D2D81FF16000C3038 /* cyrideInfoLiveActivity.swift in Sources */,
 				1628FA7F2D81FF16000C3038 /* cyrideInfo.swift in Sources */,
 				1628FA7B2D81FF16000C3038 /* cyrideInfoBundle.swift in Sources */,
@@ -421,6 +449,8 @@
 				DEVELOPMENT_TEAM = KAS388LMH3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +481,8 @@
 				DEVELOPMENT_TEAM = KAS388LMH3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -564,6 +596,14 @@
 				minimumVersion = 10.54.3;
 			};
 		};
+		164C43D22D8A2E1D004276C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.10.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -571,6 +611,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1628FA6C2D81FED2000C3038 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		164C43D32D8A2E1D004276C3 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 164C43D22D8A2E1D004276C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		164C43D52D8A2E1D004276C3 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 164C43D22D8A2E1D004276C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

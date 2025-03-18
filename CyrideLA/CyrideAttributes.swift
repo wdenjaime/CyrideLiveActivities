@@ -10,14 +10,12 @@ import ActivityKit
 import SwiftUI
 
 struct CyrideAttributes: ActivityAttributes {
-    public typealias CyrideStatus = ContentState
+    //public typealias CyrideStatus = ContentState
     
     // what changes within the activity
     public struct ContentState: Codable, Hashable {
-        // this would be in seconds then later converted in the view
-        var timeRemaining: Int
-        // temp var for demo
-        var title: String
+        // data that updates in real time
+        var timeReamining: String
     }
     
     var busName: String

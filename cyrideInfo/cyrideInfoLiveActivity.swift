@@ -9,30 +9,22 @@ import ActivityKit
 import WidgetKit
 import SwiftUI
 
-struct cyrideInfoAttributes: ActivityAttributes {
-    public struct ContentState: Codable, Hashable {
-        // Dynamic stateful properties about your activity go here!
-        var emoji: String
-    }
 
-    // Fixed non-changing properties about your activity go here!
-    var name: String
-}
 
 struct cyrideInfoLiveActivity: Widget {
     var body: some WidgetConfiguration {
-        ActivityConfiguration(for: cyrideInfoAttributes.self) { context in
-            // Lock screen/banner UI goes here
+        ActivityConfiguration(for: CyrideAttributes.self) { context in
+            // Lock screen/banner UI
             VStack {
-                Text("Hello \(context.state.emoji)")
+                Text(context.attributes.busName)
+                Text(context.state.timeReamining)
             }
-            .activityBackgroundTint(Color.cyan)
+            .activityBackgroundTint(.accentColor)
             .activitySystemActionForegroundColor(Color.black)
 
         } dynamicIsland: { context in
             DynamicIsland {
-                // Expanded UI goes here.  Compose the expanded UI through
-                // various regions, like leading/trailing/center/bottom
+                // Expanded UI goes here, appears when you press and hold and dynamic island
                 DynamicIslandExpandedRegion(.leading) {
                     Text("Leading")
                 }
@@ -40,41 +32,19 @@ struct cyrideInfoLiveActivity: Widget {
                     Text("Trailing")
                 }
                 DynamicIslandExpandedRegion(.bottom) {
-                    Text("Bottom \(context.state.emoji)")
+                    Text("Bottom \(context.state.timeReamining)")
                     // more content
                 }
+                // compact only appears when
             } compactLeading: {
                 Text("L")
             } compactTrailing: {
-                Text("T \(context.state.emoji)")
+                Text("T \(context.state.timeReamining)")
             } minimal: {
-                Text(context.state.emoji)
+                // only appears when you have something else in the status bar
+                Text(context.state.timeReamining)
             }
-            .widgetURL(URL(string: "http://www.apple.com"))
             .keylineTint(Color.red)
         }
     }
-}
-
-extension cyrideInfoAttributes {
-    fileprivate static var preview: cyrideInfoAttributes {
-        cyrideInfoAttributes(name: "World")
-    }
-}
-
-extension cyrideInfoAttributes.ContentState {
-    fileprivate static var smiley: cyrideInfoAttributes.ContentState {
-        cyrideInfoAttributes.ContentState(emoji: "😀")
-     }
-     
-     fileprivate static var starEyes: cyrideInfoAttributes.ContentState {
-         cyrideInfoAttributes.ContentState(emoji: "🤩")
-     }
-}
-
-#Preview("Notification", as: .content, using: cyrideInfoAttributes.preview) {
-   cyrideInfoLiveActivity()
-} contentStates: {
-    cyrideInfoAttributes.ContentState.smiley
-    cyrideInfoAttributes.ContentState.starEyes
 }

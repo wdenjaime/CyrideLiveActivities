@@ -8,6 +8,9 @@
 import WidgetKit
 import SwiftUI
 
+// deafult data when widget extension is created so ignore
+// this will not be used in my state
+
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(), emoji: "😀")
