@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var activity: Activity<CyrideAttributes>? = nil
 
     var body: some View {
+        
         VStack (spacing: 20) {
             Text("Cyride")
                 .fontWeight(.bold)
@@ -32,7 +33,7 @@ struct ContentView: View {
     func startActivity(){
          //input data
         
-        let state = CyrideAttributes.ContentState(timeReamining: "10 min")
+        let state = CyrideAttributes.ContentState(timeRemaining: "10 min")
         let attributes = CyrideAttributes(busName: "Blue Route")
         
         if ActivityAuthorizationInfo().areActivitiesEnabled {
@@ -50,24 +51,19 @@ struct ContentView: View {
     }
     
     func stopActivity() {
-        //let state = ActivityState
-        
-//        Task {
-//            await activity?.end(ActivityContent(state: nil, staleDate: nil), dismissalPolicy: .immediate)
-//
-//        }
-        
-        for activity in Activity<CyrideAttributes>.activities {
-            Task {
-                await activity.end(
-                    using: CyrideAttributes.ContentState(timeReamining: "Goodbye!"),
-                    dismissalPolicy: .immediate
-                )
-            }
+        Task {
+            await activity?.end(
+                ActivityContent(
+                    state: CyrideAttributes.ContentState(timeRemaining: "Arrived!"),
+                    staleDate: nil
+                ),
+                dismissalPolicy: .immediate
+            )
+            activity = nil
         }
-        
     }
-    
+
+
     
     
     

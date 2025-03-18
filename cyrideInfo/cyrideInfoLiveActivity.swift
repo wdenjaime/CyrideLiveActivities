@@ -17,7 +17,7 @@ struct cyrideInfoLiveActivity: Widget {
             // Lock screen/banner UI
             VStack {
                 Text(context.attributes.busName)
-                Text(context.state.timeReamining)
+                Text(context.state.timeRemaining)
             }
             .activityBackgroundTint(.accentColor)
             .activitySystemActionForegroundColor(Color.black)
@@ -32,17 +32,17 @@ struct cyrideInfoLiveActivity: Widget {
                     Text("Trailing")
                 }
                 DynamicIslandExpandedRegion(.bottom) {
-                    Text("Bottom \(context.state.timeReamining)")
+                    Text("Bottom \(context.state.timeRemaining)")
                     // more content
                 }
                 // compact only appears when
             } compactLeading: {
                 Text("L")
             } compactTrailing: {
-                Text("T \(context.state.timeReamining)")
+                Text("T \(context.state.timeRemaining)")
             } minimal: {
                 // only appears when you have something else in the status bar
-                Text(context.state.timeReamining)
+                Text(context.state.timeRemaining)
             }
             .keylineTint(Color.red)
         }
